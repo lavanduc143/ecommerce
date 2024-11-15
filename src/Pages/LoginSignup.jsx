@@ -17,7 +17,7 @@ const LoginSignup = () => {
     const login = async () => {
         console.log(formData)
         let responseData
-        await fetch('https://ecommer-backend-ten.vercel.app/login', {
+        await fetch('http://localhost:4000/login', {
             method: 'POST',
             headers: {
                 Accept: 'application/form-data',
@@ -37,7 +37,7 @@ const LoginSignup = () => {
     const signup = async () => {
         console.log(formData)
         let responseData
-        await fetch('https://ecommer-backend-ten.vercel.app/signup', {
+        await fetch('http://localhost:4000/signup', {
             method: 'POST',
             headers: {
                 Accept: 'application/form-data',

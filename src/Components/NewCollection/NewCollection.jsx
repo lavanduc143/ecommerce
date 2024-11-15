@@ -8,7 +8,7 @@ const NewCollection = () => {
 
 
     useEffect(() => {
-        fetch('https://ecommer-backend-ten.vercel.app/newcollections')
+        fetch('http://localhost:4000/newcollections')
         .then((response) => response.json())
         .then((data)=>setNew_Collection(data))
     },[])
